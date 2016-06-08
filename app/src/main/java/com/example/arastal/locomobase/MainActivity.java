@@ -72,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the drawer toggle as the DrawerListener
         mDrawerLayout.setDrawerListener(mDrawerToggle);
+
+        actionBar.setDisplayShowTitleEnabled(false);
         /*actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeButtonEnabled(true);*/
@@ -115,6 +117,12 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.action_home:
                 // User chose the "Settings" item, show the app settings UI...
+                return true;
+            case R.id.action_mytour:
+                // User chose the "Settings" item, show the app settings UI...
+                Intent buttonIntent = new Intent(this, MyTourActivity.class);
+                //buttonIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                this.startActivity(buttonIntent);
                 return true;
 
             case R.id.action_sidebar:

@@ -17,6 +17,7 @@
         </activity>
 
         <activity android:name=".ItineraryActivity"/>
+        <activity android:name=".MyTourActivity"/>
     </application>
 
 </manifest>

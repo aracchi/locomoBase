@@ -1,19 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:apps="http://schemas.android.com/tools">
+
+
 
     <item
         android:title="Home"
-        android:id="@+id/action_home"/>
+        android:id="@+id/action_home"
+        android:icon="@drawable/home_button"
+        app:showAsAction="always"/>
+
 
     <item
-        android:title="Browse Tour"/>
+        android:title="Browse Tour"
+        android:id="@+id/action_browse"
+        android:icon="@drawable/browse_button"
+        app:showAsAction="always"/>
 
     <item
-        android:title="My Tour"/>
+        android:title="My Tour"
+        android:id="@+id/action_mytour"
+        android:icon="@drawable/mytour_button"
+        app:showAsAction="always"/>
 
     <item
-        android:title="My Rewards"/>
+        android:title="My Rewards"
+        android:id="@+id/action_rewards"
+        android:icon="@drawable/reward_button"
+        app:showAsAction="always"/>
 
     <item
         android:title="Sidebar"
